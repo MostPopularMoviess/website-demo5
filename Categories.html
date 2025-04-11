@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Categories - MPM</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a; /* Dark background */
+            color: #ccc; /* Light gray text */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000; /* Black background */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            background-color: #333; /* Dark gray */
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            margin: 20px;
+        }
+
+        section.category {
+            margin-bottom: 30px;
+        }
+
+        section.category h2 {
+            color: #fff;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .movie {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .movie-image {
+            width: 150px;
+            height: 225px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .movie-info {
+            margin-left: 20px;
+            color: #ccc;
+        }
+
+        .movie-info h3 {
+            color: #fff;
+            font-size: 22px;
+        }
+
+        .movie-info p {
+            font-size: 16px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f00;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 30px;
+        }
+
+        .button:hover {
+            background-color: #c00;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">MPM</div>
+    <nav>
+        <ul>
+            <li><a href="landingpage.html" title="Go to the homepage">Home</a></li>
+            <li><a href="categories.html" title="Explore movie categories">Categories</a></li>
+            <li><a href="aboutus.html" title="More information about us">About Us</a></li>
+            <li><a href="Terms.html" title="Terms and conditions">Terms</a></li>
+        </ul>
+        <select>
+            <option>All</option>
+            <!-- Add category options if necessary -->
+        </select>
+        <input type="text" placeholder="Search movies...">
+    </nav>
+    <div class="session">Log in <span>EN ▾</span></div>
+</header>
+
+<main>
+    <section class="category">
+        <h2>Action</h2>
+        <div class="movie">
+            <img src="venganza.jpg" alt="Action Movie Image" class="movie-image">
+            <div class="movie-info">
+                <h3>Final Revenge</h3>
+                <p>A former soldier seeks revenge for his family's death.</p>
+                <p><strong>MPM Rating:</strong> 8.5/10</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="category">
+        <h2>Horror</h2>
+        <div class="movie">
+            <img src="longlegs.jpg" alt="Horror Movie Image" class="movie-image">
+            <div class="movie-info">
+                <h3>Long Legs</h3>
+                <p>Psychological horror, a story that will leave you frozen.</p>
+                <p><strong>MPM Rating:</strong> 9/10</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="category">
+        <h2>Romance</h2>
+        <div class="movie">
+            <img src="popi.jpg" alt="Romance Movie Image" class="movie-image">
+            <div class="movie-info">
+                <h3>Beyond Time</h3>
+                <p>A love story between two people from different worlds.</p>
+                <p><strong>MPM Rating:</strong> 7.8/10</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="category">
+        <h2>Comedy</h2>
+        <div class="movie">
+            <img src="betleejuice.jpg" alt="Comedy Movie Image" class="movie-image">
+            <div class="movie-info">
+                <h3>Beetlejuice</h3>
+                <p>Revenge is reborn and haunts the world, a comedy you can't miss.</p>
+                <p><strong>MPM Rating:</strong> 7.0/10</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Button to go to Terms and Conditions -->
+    <a href="Terms.html" class="button">View Terms and Conditions</a>
+</main>
+
+<footer>
+    <p>&copy; 2025 MPM - Most Popular Movies. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

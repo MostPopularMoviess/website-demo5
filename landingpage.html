@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MPM - Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1D1F26; /* Fondo principal oscuro */
+            color: #BFBEB8; /* Texto principal gris claro */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000000; /* Fondo negro */
+            color: #F2F1E9; /* Texto blanco hueso */
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            background-color: #141414; /* Gris oscuro */
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #F2F1E9; /* Texto en blanco hueso */
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .movie-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .movie {
+            width: 45%;
+        }
+
+        .movie-video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .movie-info h3 {
+            color: #F2F1E9; /* Títulos en blanco hueso */
+            font-size: 22px;
+        }
+
+        .movie-info p {
+            font-size: 16px;
+            color: #A1A6A5; /* Gris medio */
+        }
+
+        footer {
+            background-color: #000000;
+            color: #F2F1E9;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .login-section {
+            background-color: #141414;
+            text-align: center;
+            padding: 30px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .login-section h2 {
+            color: #F2F1E9;
+        }
+
+        .login-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .login-buttons button {
+            background-color: #A1A6A5;
+            color: #000000;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .login-buttons button:hover {
+            background-color: #BFBEB8;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">MPM</div>
+    <nav>
+        <ul>
+            <li><a href="landingpage.html" title="Go to the homepage">Home</a></li>
+            <li><a href="categories.html" title="Explore movie categories">Categories</a></li>
+            <li><a href="aboutus.html" title="More information about us">About Us</a></li>
+            <li><a href="Terms.html" title="Terms and conditions">Terms</a></li>
+        </ul>
+        <select>
+            <option>All</option>
+        </select>
+        <input type="text" placeholder="Search movies...">
+    </nav>
+    <div class="session">Log in <span>EN ▾</span></div>
+</header>
+
+<main>
+    <div class="movie-container">
+        <div class="movie" id="movie1">
+            <video class="movie-video" controls>
+                <source src="venganza.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="movie-info">
+                <h3><em>Final Revenge</em></h3>
+                <p>A former soldier seeks revenge for his family's death.</p>
+            </div>
+        </div>
+        <div class="movie" id="movie2">
+            <video class="movie-video" controls>
+                <source src="popi.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="movie-info">
+                <h3><em>Beyond Time</em></h3>
+                <p>An intergalactic adventure exploring the mysteries of the universe.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="login-section">
+    <h2>Sign in to Your Account</h2>
+    <div class="login-buttons">
+        <button onclick="signInWithGoogle()">Sign in with Google</button>
+        <button onclick="signInWithFacebook()">Sign in with Facebook</button>
+        <button onclick="signInWithEmail()">Sign in with Email</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 MPM - Most Popular Movies. All rights reserved.</p>
+    <div class="terms-link" style="text-align: center; margin-top: 20px;">
+        <a href="terms.html" style="color: #BFBEB8; text-decoration: underline;">Terms and Conditions</a>
+    </div>
+</footer>
+
+</body>
+</html>
